@@ -1,1 +1,54 @@
-<!-- ...crickets... -->
+<!DOCTYPE html>
+<html>
+
+<body>
+  <h1>Registration form</h1>
+  <form name="submitForm" onsubmit="submitForm(event)">
+    <label>Username</label>
+    <input type="text" required />
+    <label>Password</label>
+    <input type="text" required />
+    <br/>
+    <label>Email</label>
+    <input type="text" required />
+    <br/>
+    <label>Which taxi do you required?</label>
+    <br/>
+    <input type="radio" name="taxi" value="car" required />
+    <label for="car">Car</label><br>
+    <input type="radio" name="taxi" value="van" required />
+    <label for="van">Van</label><br>  
+    <input type="radio" name="taxi" value="tuk-tuk" required />
+    <label for="tuk-tuk">Tuk Tuk</label>
+    <br/>
+    <label>Extra</label>
+    <br/>
+    <input type="checkbox" name="extra" value="Baby Seat" />
+    <label for="baby-seat">Baby Seat</label><br>
+    <input type="checkbox" name="extra" value="Wheelchair Access" />
+    <label for="wheelchair-access">Wheelchair Access</label><br>  
+    <input type="checkbox" name="extra" value="Stock Tip" />
+    <label for="stock-tip">Stock Tip</label>
+    <br/>
+    <label for="pickup">Pickup</label>
+    <select id="pickup">
+      <option value="Select One">Select One</option>
+      <option value="Taxi Office">Taxi Office</option>
+      <option value="Town Hall">Town Hall</option>
+      <option value="We'll Guess!">We'll Guess!</option>
+    </select>
+    <br/>
+    <label type="text" for="special">Special</label>
+    <textarea name="special" rows="2"></textarea>
+    <br/>
+    <input type="submit" value="Submit">
+    <script>
+      function submitForm(event){
+          event.preventDefault();
+          document.submitForm.reset();
+      }
+    </script>
+  </form>
+</body>
+
+</html>

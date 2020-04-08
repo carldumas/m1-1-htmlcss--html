@@ -32,7 +32,7 @@ All HTML elements are written the same way:
 1. You always start an element with <tagname …>
    - where … denotes the attributes of the element.
 2. Then come the children
-3. The you need to close the element with </tagname>
+3. Then you need to close the element with </tagname>
 
 In this course all elements must be closed. No exceptions.
 
@@ -108,7 +108,7 @@ The li tag is for list elements. The parent of an li element should be a ul or o
 
 ## `ol`
 
-The ul tag is for numbered lists. The children of a ol element should be li elements
+The ol tag is for numbered lists. The children of a ol element should be li elements
 
 ## `select`
 
